@@ -6,7 +6,7 @@
    ```
 
 ## Casos  
-└── caso-01/Proyecto API - NODEjs + MySQL
+└── caso-01/[Proyecto API - NODEjs + MySQL](https://github.com/diegoreynoso11/repo-grupo-02/tree/main/caso-01)
 
 ## Integrantes del grupo
 
