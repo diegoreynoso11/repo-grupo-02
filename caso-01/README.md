@@ -88,6 +88,6 @@ server.listen(3000, () => {
 ```js
 // Si faltan datos en una solicitud POST
 if (!body.name || body.name.length < 5) {
-  return format.lengthRequired('El campo "name" debe tener al menos 5 caracteres')
+  return response.lengthRequired('El campo "name" debe tener al menos 5 caracteres')
 }
 ```
