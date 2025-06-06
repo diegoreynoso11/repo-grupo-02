@@ -91,11 +91,3 @@ if (!body.name || body.name.length < 5) {
   return format.lengthRequired('El campo "name" debe tener al menos 5 caracteres')
 }
 ```
- 
-## Autores
-
-- Abril Sabatini
-- Ariel Almada
-- Daniela Otero 
-- Diego Reynoso
-- Pedro Luque 
