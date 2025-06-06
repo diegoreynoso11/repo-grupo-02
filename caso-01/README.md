@@ -34,7 +34,7 @@ El proyecto consiste en la creación de una API, utilizando JavaScript y NODEjs 
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/repo-grupo-02.git
+   git clone https://github.com/diegoreynoso11/repo-grupo-02.git
    ```
 2. Navega a la carpeta del caso:
    ```bash
