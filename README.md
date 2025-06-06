@@ -4,7 +4,10 @@
    ```bash
    git clone https://github.com/diegoreynoso11/repo-grupo-02.git
    ```
-
+2. Dirigete a la ruta que necesites
+   ```bash
+   cd <ruta-de-carpeta>
+   ```
 ## Casos  
 └── caso-01/[Proyecto API - NODEjs + MySQL](https://github.com/diegoreynoso11/repo-grupo-02/tree/main/caso-01)
 
