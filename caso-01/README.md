@@ -30,17 +30,9 @@ El proyecto consiste en la creación de una API, utilizando JavaScript y NODEjs 
 - XAMPP (u otro entorno de desarrollo preferido)
 - MySQL workbench
 
-## Instalación
+## Iniciar  
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/diegoreynoso11/repo-grupo-02.git
-   ```
-2. Navega a la carpeta del caso:
-   ```bash
-   cd repo-grupo-02/caso-01
-   ```
-3. Inicia el proyecto con `pnpm run dev`
+Inicia el proyecto con `pnpm run dev`
 
 ## 🧰 Utilidad de `FormatRes`
 
