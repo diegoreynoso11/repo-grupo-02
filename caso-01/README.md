@@ -77,11 +77,19 @@ server.listen(3000, () => {
 | --------------------- | ----------- | ---------------------------------------------------- |
 | `success(data)`       | `200`       | Respuesta exitosa con contenido                      |
 | `created(data)`       | `201`       | Recurso creado correctamente                         |
+| `accepted(msg)`       | `202`       | petición aceptada                                    |
+| `noContent()`         | `204`       | Cuerpo de la solicitud vacío                         |
 | `badRequest(msg)`     | `400`       | Error por solicitud incorrecta                       |
+| `forbidden(msg)`      | `403`       | Método no permitido                                  |
 | `notFound(msg)`       | `404`       | Recurso no encontrado                                |
 | `notFoundRoute()`     | `404`       | Ruta no existente                                    |
+| `notAcceptable()`     | `406`       | Datos incorrectos                                    |
+| `conflict()`          | `409`       | No se modificó el elemento                           |
 | `lengthRequired(msg)` | `411`       | Longitud requerida (ej. para validaciones de campos) |
+| `urlTooLong()`        | `414`       | El id es demasiado largo                             |
 | `serverError(msg)`    | `500`       | Error interno del servidor                           |
+| `notImplemented()`    | `501`       | Funcionalidad no implementada                        |
+| `serverUnavailable()` | `503`       | Servidor caído                                       |
 
 ### 🧪 Ejemplo personalizado
 
