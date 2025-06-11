@@ -1,4 +1,4 @@
-const validateProduct = (body, isPartial = false) => {
+export const validateProduct = (body, isPartial = false) => {
   const errors = [];
 
   if (!isPartial || "name" in body) {
@@ -12,7 +12,7 @@ const validateProduct = (body, isPartial = false) => {
       }
 
       if (body.name.length > 100) {
-        errors.push("'name' must be at most 45 characters long");
+        errors.push("'name' must be at most 100 characters long");
       }
     }
   }
@@ -24,7 +24,7 @@ const validateProduct = (body, isPartial = false) => {
       errors.push("'description' must be a string");
     } else {
       if (body.description.length < 5) {
-        errors.push("'description' must be at least 10 characters long");
+        errors.push("'description' must be at least 5 characters long");
       }
 
       if (body.description.length > 255) {
@@ -35,5 +35,3 @@ const validateProduct = (body, isPartial = false) => {
 
   return errors;
 };
-
-module.exports = { validateProduct };
