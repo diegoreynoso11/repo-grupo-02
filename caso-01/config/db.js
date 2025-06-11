@@ -1,4 +1,3 @@
-// back/config/db.js
 import { createPool } from 'mysql2'
 
 const pool = createPool({
@@ -11,8 +10,14 @@ const pool = createPool({
   queueLimit: 0,
   charset: 'utf8mb4'
 })
-
-console.log('Conexión a MySQL exitosa')
-pool.query('SET NAMES "utf8mb4"')
-
+export async function getConnection () {
+  try {
+    const connection = await pool.promise().getConnection()
+    await connection.query('SET NAMES "utf8mb4"')
+    connection.release()
+    return { abort: false }
+  } catch (err) {
+    return { abort: true }
+  }
+}
 export default pool.promise()

@@ -1,11 +1,11 @@
 import http from 'http'
 import { FormatRes } from './utils/formatRes.js'
-import { getConnection } from './routesDb/config/db.js'
 import { getRoutes } from './routes/get.js'
 import { deleteRoutes } from './routes/delete.js'
 import { postRoutes } from './routes/post.js'
 import { putRoutes } from './routes/put.js'
 import { patchRoutes } from './routes/patch.js'
+import { getConnection } from './config/db.js'
 const desiredPort = 3000
 
 async function requestHandler (req, res) {
