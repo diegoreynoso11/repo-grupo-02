@@ -1,4 +1,4 @@
-const FormatRes = require("./formatRes");
+import { FormatRes } from "./formatRes.js";
 
 export const authMiddleware = (req, res) => {
   const response = new FormatRes(res);
