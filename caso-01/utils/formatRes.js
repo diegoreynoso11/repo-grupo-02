@@ -58,6 +58,10 @@ export class FormatRes {
     return this.send(414, { error: message })
   }
 
+  unsupportedMediaType(message = 'No es un JSON valido') {
+    return this.send(415, { error: message })
+  }
+
   serverError (message = 'Error interno del servidor') {
     return this.send(500, { error: message })
   }
