@@ -22,8 +22,8 @@ export class FormatRes {
     return this.send(202, data)
   }
 
-  noContent(message = 'Cuerpo de la solicitud vacío') {
-    return this.send(204, { error: message })
+  noContent() {
+    return this.send(204, null)
   }
 
   badRequest(message = 'Solicitud incorrecta') {
