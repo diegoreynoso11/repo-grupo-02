@@ -77,4 +77,9 @@ export class FormatRes {
   serverUnavailable(message = 'Servidor caído') {
     return this.send(503, { error: message })
   }
+
+  genericResponse(status, data) {
+    return this.send(status, data);
+  }
+
 }
