@@ -1,11 +1,16 @@
 export function getBody(req) {
+    
+    // Objeto error para el reject
+    const err = {
+        title: 'Unsupported Media Type',
+        statusCode: 415
+    }
+
     return new Promise((resolve, reject) => {
         
         // Verificamos que el Content-Type sea application/json
         const contentType = req.headers['Content-Type'];
         if (!contentType || !contentType.includes('application/json')) {
-            const err = new Error ('Unsupported Media Type');
-            err.statusCode =  415;
             return reject(err);
         }
 
@@ -22,8 +27,6 @@ export function getBody(req) {
                 const parsed = JSON.parse(body);
                 resolve(parsed);
             } catch (error) {
-                const err = new Error('Invalid JSON');
-                err.statusCode = 415;
                 reject(err);
             }
         });
